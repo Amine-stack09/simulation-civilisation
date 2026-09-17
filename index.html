@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation de Colonie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-container">
+        <div id="stats-panel">
+            <h2>Statistiques</h2>
+            <p>Habitants : <span id="stat-population">0</span> (<span id="stat-males">0</span> H / <span id="stat-females">0</span> F)</p>
+            <p>Récolteurs : <span id="stat-harvesters">0</span></p>
+            <p>Maisons : <span id="stat-houses">0</span></p>
+            <p>Logés : <span id="stat-housed">0</span> | Sans abri : <span id="stat-homeless">0</span></p>
+            <p>Stock Nourriture : <span id="stat-stored-food">0</span> / <span id="stat-storage-cap">500</span></p>
+            <p>Buissons de nourriture : <span id="stat-food">0</span></p>
+            <p>Arbres : <span id="stat-trees">0</span></p>
+            <p>Amitiés : <span id="stat-friendships">0</span> | Conflits : <span id="stat-negatives">0</span></p>
+            <p>Rencontres totales : <span id="stat-encounters">0</span></p>
+            <p>Faim moyenne : <span id="stat-avg-hunger">0</span>%</p>
+            <p>Soif moyenne : <span id="stat-avg-thirst">0</span>%</p>
+            <p>Énergie moyenne : <span id="stat-avg-energy">0</span>%</p>
+            <p>Temps : <span id="stat-time">0</span>s</p>
+            
+            <div id="legend">
+                <div class="legend-item"><span class="legend-color legend-hunger"></span> Faim</div>
+                <div class="legend-item"><span class="legend-color legend-thirst"></span> Soif</div>
+                <div class="legend-item"><span class="legend-color legend-energy"></span> Énergie</div>
+            </div>
+        </div>
+        <div id="controls-panel">
+            <button id="btn-pause">Pause</button>
+            <button id="btn-reset">Réinitialiser</button>
+        </div>
+    </div>
+    <canvas id="simCanvas"></canvas>
+    <script src="script.js" defer></script>
+</body>
+</html>
